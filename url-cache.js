@@ -63,7 +63,7 @@ function cache(url, callback) {
 				callback(err, null);
 				return;
 			}
-			if (r.statusCode != 200) {
+			if (res.statusCode != 200) {
 				var err = {};
 				err.message = 'request url status error: ' + res.statusCode;
 				callback(err, null);
